@@ -1,0 +1,17 @@
+<div class="Create New Story">
+  <div class="form">
+    <form class="create-form"  *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h1>Create New Story</h1>
+
+      <h3>Title</h3>  
+      <input type="text"  placeholder="Enter Title of your Story" formControlName="title" type="text" required/>
+      <h3>Body</h3> 
+      <div [ngStyle]="{'height': '200px', 'width': '320px'}">
+        <textarea [ngStyle]="{'height': '200px', 'width': '320px'}" type="text" formControlName="body" placeholder="Enter the body of your Story" required> </textarea>
+      </div>
+      <h3>Published Date</h3> 
+      <input type="date" formControlName="publishedAt" placeholder="Enter the body of your Story" required/>
+      <button type="button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

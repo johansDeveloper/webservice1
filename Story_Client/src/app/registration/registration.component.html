@@ -1,0 +1,15 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form"  *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h1>User Registration</h1>
+      <input type="text" 
+      placeholder="username"  
+      formControlName="username" required 
+      type="text" />
+
+      <input type="password" formControlName="password" required  placeholder="password"/>
+      <input type="password" placeholder="Confirm Password"/>
+      <button type="button" type="submit">Register</button>
+    </form>
+  </div>
+</div>

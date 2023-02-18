@@ -1,0 +1,22 @@
+<div class="header">
+  <h2>Story List</h2>
+  <button (click)="onClickCreate()" type="button">Create Story</button>
+</div>
+<ul>
+  <li *ngFor="let story of stories">
+      <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <h2>{{ story.title }}</h2>
+              <h5>Published On {{story.date}} </h5>
+              <p>{{ story.body }} </p>
+              <div>
+                  <button (click)="onClickEdit(story)" type="button">Edit</button>
+                  <button (click)="onClickDelete(story)" type="button">Delete</button>
+               </div>
+            </div>
+           
+          </div>
+        </div>        
+    </li> 
+</ul>
