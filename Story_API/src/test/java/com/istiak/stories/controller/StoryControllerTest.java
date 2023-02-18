@@ -1,8 +1,13 @@
 package com.istiak.stories.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.istiak.stories.StoriesApplication;
 import com.istiak.stories.model.Story;
 import com.istiak.stories.repository.StoryRepository;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -58,22 +63,27 @@ public class StoryControllerTest {
 
         Story storyNew = new Story();
         ResponseEntity<Object> responseEntity = (ResponseEntity<Story>) storyController.save(storyNew);
-        
+
     }
 
     @Test
     public void testFindAll() {
-        Employee employee1 = new Employee(1, "Lokesh", "Gupta", "howtodoinjava@gmail.com");
-        Employee employee2 = new Employee(2, "Alex", "Gussin", "example@gmail.com");
-        Employees employees = new Employees();
-        employees.setEmployeeList(Arrays.asList(employee1, employee2));
+        Story story1 = new Story();
+        story1.setTitle("title test 1");
 
-        when(employeeDAO.getAllEmployees()).thenReturn(employees);
+        Story story2 = new Story();
+        story2.setTitle("title test 2");
 
-        Employees result = employeeController.getEmployees();
+        List<Story> stories = new ArrayList<>();
+        stories.set(1, story1);
+        stories.set(2, story2);
 
-        assertThat(result.getEmployeeList().size()).isEqualTo(2);
-        assertThat(result.getEmployeeList().get(0).getFirstName()).isEqualTo(employee1.getFirstName());
-        assertThat(result.getEmployeeList().get(1).getFirstName()).isEqualTo(employee2.getFirstName());
+        when(storyRepository.getAllStoriesSorted(null)).thenReturn(stories);
+
+        List<Story> result = storyController.getAllNotes();
+
+        assertThat(result.size()).isEqualTo(2);
+        assertThat(result.get(0).getTitle()).isEqualTo(story1.getTitle());
+        assertThat(result.get(1).getTitle()).isEqualTo(story2.getTitle());
     }
 }
