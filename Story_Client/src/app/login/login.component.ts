@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
    private alert: AlertService,
    private service: LoginService, ) { }
 
- ngOnInit() {
+    ngOnInit() {
    this.initForm(); 
  }
 
