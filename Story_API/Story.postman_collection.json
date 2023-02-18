@@ -1,0 +1,243 @@
+{
+	"id": "213aa735-0c38-8a13-387d-d397e2407079",
+	"name": "Story",
+	"description": "",
+	"order": [
+		"62581183-d744-d93d-7d7f-b3dced441e7a",
+		"b2f1d774-e81f-bbbf-1130-6007b887f0af",
+		"052b3bbb-3b34-0be0-d595-cc235e79dff5",
+		"b47651bc-9b88-b6aa-68cb-b7bc66b48d33",
+		"f3e8bdc0-7c7b-0d68-c1a0-7aecdac7f837",
+		"cd76f336-6b52-d8f9-f45c-1dede7e27bec",
+		"c00edc1f-d0c2-e3f5-26b8-24434c91715f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1537470074623,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "052b3bbb-3b34-0be0-d595-cc235e79dff5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/stories",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1537472313180,
+			"name": "Get Stories",
+			"description": "",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"responses": [],
+			"rawModeData": "{\n        \"title\": \"admin\",\n        \"body\": \"password\",\n        \"publishedAt\": \"2017-08-10T00:00:00.000+0000\",\n        \"updatedAt\": \"2018-09-20T18:48:56.000+0000\"\n }"
+		},
+		{
+			"id": "62581183-d744-d93d-7d7f-b3dced441e7a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/users/sign-up",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "signup",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537470968439,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "  {\n  \t  \"username\": \"anik\",\n      \"password\": \"123456\"\n  }"
+		},
+		{
+			"id": "b2f1d774-e81f-bbbf-1130-6007b887f0af",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537470369073,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "  {\n  \t  \"username\": \"admin\",\n      \"password\": \"password\"\n  }"
+		},
+		{
+			"id": "b47651bc-9b88-b6aa-68cb-b7bc66b48d33",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/stories",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create Stories",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537470331319,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "  {\n  \t  \"body\": \"admin\",\n      \"title\": \"password\",\n      \"publishedAt\": \"2018-10-20\"\n  }"
+		},
+		{
+			"id": "c00edc1f-d0c2-e3f5-26b8-24434c91715f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmlrIiwiZXhwIjoxNTM3ODk4NTQ4fQ.G67Gmak6Id06TyBNT2F667ekkhVr9R_Snfh_yd9SWPPbRo5Jwh22xF1y9RbVdFkOWUdUNz3eUFcifmpMeglmhg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmlrIiwiZXhwIjoxNTM3ODk4NTQ4fQ.G67Gmak6Id06TyBNT2F667ekkhVr9R_Snfh_yd9SWPPbRo5Jwh22xF1y9RbVdFkOWUdUNz3eUFcifmpMeglmhg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/stories/page/0/limit/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Story list pagination ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537894159898,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"title\": \"admin\",\n        \"body\": \"password\",\n        \"publishedAt\": \"2017-08-10T00:00:00.000+0000\",\n        \"updatedAt\": \"2018-09-20T18:48:56.000+0000\"\n }"
+		},
+		{
+			"id": "cd76f336-6b52-d8f9-f45c-1dede7e27bec",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/stories/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete Story",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537472348966,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"title\": \"admin\",\n        \"body\": \"password\",\n        \"publishedAt\": \"2017-08-10T00:00:00.000+0000\",\n        \"updatedAt\": \"2018-09-20T18:48:56.000+0000\"\n }"
+		},
+		{
+			"id": "f3e8bdc0-7c7b-0d68-c1a0-7aecdac7f837",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/stories/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "213aa735-0c38-8a13-387d-d397e2407079",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Stories",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537471206826,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n        \"title\": \"admin\",\n        \"body\": \"password\",\n        \"publishedAt\": \"2017-08-10T00:00:00.000+0000\",\n        \"updatedAt\": \"2018-09-20T18:48:56.000+0000\"\n }"
+		}
+	]
+}
