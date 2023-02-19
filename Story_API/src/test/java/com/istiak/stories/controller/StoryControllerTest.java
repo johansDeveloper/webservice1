@@ -62,12 +62,12 @@ public class StoryControllerTest {
         when(storyController.createNote(any(Story.class))).thenReturn(story);
 
         Story storyNew = new Story();
-        ResponseEntity<Object> responseEntity = (ResponseEntity<Story>) storyController.save(storyNew);
+        Story responseEntity = storyController.createNote(storyNew);
 
     }
 
     @Test
-    public void testFindAll() {
+    public void testFindAllStories() {
         Story story1 = new Story();
         story1.setTitle("title test 1");
 
@@ -86,4 +86,21 @@ public class StoryControllerTest {
         assertThat(result.get(0).getTitle()).isEqualTo(story1.getTitle());
         assertThat(result.get(1).getTitle()).isEqualTo(story2.getTitle());
     }
+
+    @Test
+    public void testDeleteStory() {
+
+    }
+
+    @Test
+    public void testUpdateNote() {
+
+    }
+
+    @Test
+    public void getAllPosts() {
+    }
+    
+    
+
 }
